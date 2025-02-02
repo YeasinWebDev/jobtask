@@ -25,7 +25,7 @@ const LegacySec = () => {
   const translateX2 = useTransform(smoothX, [window.innerWidth / 2, -window.innerWidth / 2], [-30, 30]);
   const translateY2 = useTransform(smoothY, [window.innerHeight / 2, -window.innerHeight / 2], [-30, 30]);
   return (
-    <section className="overflow-hidden h-[500px] bg-gradient-to-r from-indigo-600 to-blue-500 rotate-8 -bottom-36 w-[150%] md:w-[120%] -left-20 relative">
+    <section className="!overflow-hidden h-[500px] bg-gradient-to-r from-indigo-600 to-blue-500 rotate-8 -bottom-36 w-[150%] md:w-[120%] -left-20 relative">
 
       {/* line-1 */}
       <motion.div
