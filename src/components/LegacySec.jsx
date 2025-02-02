@@ -22,10 +22,10 @@ const LegacySec = () => {
 
   const translateX1 = useTransform(smoothX, [-window.innerWidth / 2, window.innerWidth / 2], [-30, 30]);
   const translateY1 = useTransform(smoothY, [-window.innerHeight / 2, window.innerHeight / 2], [-30, 30]);
-  const translateX2 = useTransform(smoothX, [window.innerWidth / 2, -window.innerWidth / 2], [-30, 30]);
-  const translateY2 = useTransform(smoothY, [window.innerHeight / 2, -window.innerHeight / 2], [-30, 30]);
+  const translateX2 = useTransform(smoothX, [window.innerWidth / 2, -window.innerWidth / 2], [-15, 15]);
+  const translateY2 = useTransform(smoothY, [window.innerHeight / 2, -window.innerHeight / 2], [-15, 15]);
   return (
-    <section className="!overflow-hidden h-[500px] bg-gradient-to-r from-indigo-600 to-blue-500 rotate-8 -bottom-36 w-[150%] md:w-[120%] -left-20 relative">
+    <section className="legacy overflow-hidden h-[500px] bg-gradient-to-r from-indigo-600 to-blue-500 rotate-8 -bottom-38 w-[150%] md:w-[120%] -left-20 relative">
 
       {/* line-1 */}
       <motion.div
@@ -46,15 +46,15 @@ const LegacySec = () => {
         style={{ x: translateX2, y: translateY2 }}
         className='hidden lg:flex'
       >
-        <div className='absolute left-[8rem] bg-cyan-300 blur-lg w-[2rem] h-[15rem] rotate-20 -mt-12'></div>
-        <div className='absolute left-[15rem] bg-cyan-300 blur-lg w-[2rem] h-[20rem] rotate-20 -mt-12'></div>
-        <div className='absolute left-[35rem] bg-cyan-300 blur-lg w-[5rem] h-[25rem] rotate-20 -mt-12'></div>
-        <div className='absolute left-[22rem] bg-cyan-300 blur-2xl w-[12rem] h-[12rem] rotate-20 rounded-full -mt-10'></div>
+        <div className='absolute left-[8rem] bg-cyan-300 blur-lg w-[2rem] h-[15rem] rotate-20 mt-2.5'></div>
+        <div className='absolute left-[15rem] bg-cyan-300 blur-lg w-[2rem] h-[20rem] rotate-20 mt-2.5'></div>
+        <div className='absolute left-[35rem] bg-cyan-300 blur-lg w-[5rem] h-[25rem] rotate-20 mt-3.5'></div>
+        <div className='absolute left-[22rem] bg-cyan-300 blur-2xl w-[12rem] h-[12rem] rotate-20 rounded-full mt-10'></div>
 
-        <div className='absolute right-[20rem] xl:right-[48rem] bg-cyan-300 blur-lg w-[23px] h-[17rem] rotate-32 -mt-12'></div>
-        <div className='absolute right-[25rem] xl:right-[54rem] bg-cyan-300 blur-lg w-[23px] h-[17rem] rotate-32 -mt-12'></div>
-        <div className='absolute right-[15rem] xl:right-[38rem] bg-cyan-300 blur-lg w-[23px] h-[22rem] rotate-32 -mt-12'></div>
-        <div className='absolute right-[7rem] xl:right-[20rem] bg-cyan-300 blur-lg w-[5rem] h-[22rem] rotate-32 -mt-12'></div>
+        <div className='absolute right-[20rem] xl:right-[48rem] bg-cyan-300 blur-lg w-[23px] h-[17rem] rotate-32 mt-2.5'></div>
+        <div className='absolute right-[25rem] xl:right-[54rem] bg-cyan-300 blur-lg w-[23px] h-[17rem] rotate-32 mt-1'></div>
+        <div className='absolute right-[15rem] xl:right-[38rem] bg-cyan-300 blur-lg w-[23px] h-[22rem] rotate-32 mt-1'></div>
+        <div className='absolute right-[7rem] xl:right-[20rem] bg-cyan-300 blur-lg w-[5rem] h-[22rem] rotate-32 mt-1'></div>
       </motion.div>
       
       <div className="relative z-10 text-start ml-[6rem] pt-14 md:pt-20 xl:pt-16 md:ml-[5rem] lg:ml-[5rem] xl:ml-[18rem] 2xl:ml-[20rem] -rotate-8 text-white">
