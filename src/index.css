@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Montserrat", serif;
+}
+
+.clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+  
+  .swiper-pagination {
+    top: 30px !important; /* Adjust the position */
+    width: 100%;
+}
